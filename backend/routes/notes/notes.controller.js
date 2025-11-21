@@ -1,5 +1,5 @@
 // get all notes
-const { notes } = require('../../utils/notes');
+let { notes } = require('../../utils/notes');
 
 function getAllNotes(req, res) {
   console.log(notes);
@@ -26,7 +26,6 @@ function editNote(req, res) {
 
   const { title, content } = req.body;
 
-  let selectedNote = notes.find((note) => note.id == id);
   const edittedNote = {
     id,
     title,
