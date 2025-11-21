@@ -1,0 +1,48 @@
+Please build a small fullstack mini app:
+Requirements
+A Node.js/Express API (backend) that manages a list of notes (hardcoded/mock data is fine — no database required).
+Endpoints required:
+
+
+GET /notes → returns all notes
+
+
+POST /notes → create a note { id, title, content } (accept JSON, append to in-memory array)
+
+
+PATCH /notes/:id → update a note's title and/or content
+
+
+DELETE /notes/:id → delete a note
+
+
+Example response for GET /notes:
+
+
+[
+  { "id": 1, "title": "Buy milk", "content": "2 liters" },
+  { "id": 2, "title": "Call Sam", "content": "Discuss roadmap" }
+]
+
+A React app (frontend) that connects to that API and provides a small UI to:
+List all notes on page load.
+
+
+Create a new note (title + content).
+
+
+Edit an existing note (inline or modal).
+
+
+Delete a note.
+
+
+You can use:
+Node + Express for backend (hardcoded/mock in-memory array).
+
+
+React with useState, useEffect, and fetch() for frontend.
+
+
+Goal: Make sure both backend and frontend run and communicate correctly. Focus on clarity, correctness, and organization — UI styling can be minimal.
+You have 50 minutes. Afterward, be ready to show the app and briefly explain what you built and what you'd improve with more time.
